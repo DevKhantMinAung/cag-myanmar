@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('record_images', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
+            $table->foreignId('record_id');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

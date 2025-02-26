@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('records', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('intro')->nullable();
+            $table->text('intro')->nullable();
             $table->string('thumbnail')->nullable();
             $table->timestamps();
         });

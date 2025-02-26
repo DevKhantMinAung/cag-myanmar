@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('sub-title');
             $table->string('logo')->nullable();
             $table->text('address')->nullable();
+            $table->text('address-url')->nullable();    
             $table->string('email')->nullable();
             $table->string('phone1')->nullable();
             $table->string('phone2')->nullable();

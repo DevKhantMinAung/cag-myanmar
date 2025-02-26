@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('intro');
+            $table->string('image');
+            $table->enum('position', ['left', 'center', 'right'])->default('right');
             $table->timestamps();
         });
     }

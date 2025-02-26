@@ -10,6 +10,6 @@ class Setting extends Model
     /** @use HasFactory<\Database\Factories\SettingFactory> */
     use HasFactory;
 
-    protected $fillable = ['title', 'sub_title', 'logo', 'address', 'email', 'phone2', 'phone2'];
+    protected $fillable = ['title', 'sub-title', 'logo', 'address', 'address-url', 'email', 'phone1', 'phone2'];
     
 }

@@ -10,5 +10,5 @@ class Hero extends Model
     /** @use HasFactory<\Database\Factories\HeroFactory> */
     use HasFactory;
 
-    protected $fillable = ['title', 'intro'];
+    protected $fillable = ['title', 'intro', 'image', 'position'];
 }

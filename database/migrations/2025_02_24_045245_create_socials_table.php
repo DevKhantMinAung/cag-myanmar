@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('socials', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->string('url');
             $table->longText('icon');
             $table->timestamps();

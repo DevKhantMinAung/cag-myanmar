@@ -10,5 +10,5 @@ class profile extends Model
     /** @use HasFactory<\Database\Factories\ProfileFactory> */
     use HasFactory;
 
-    protected $fillable= ['name', 'title1', 'title2', 'title3', 'desc'];
+    protected $fillable= ['name', 'title1', 'title2', 'title3', 'desc', 'image'];
 }

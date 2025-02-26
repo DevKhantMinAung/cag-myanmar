@@ -10,6 +10,6 @@ class Social extends Model
     /** @use HasFactory<\Database\Factories\SocialFactory> */
     use HasFactory;
 
-    protected $fillable = ['url', 'icon'];
+    protected $fillable = ['name', 'url', 'icon'];
 
 }

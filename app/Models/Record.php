@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Record extends Model
 {
@@ -12,7 +13,7 @@ class Record extends Model
 
     protected $fillable = ['title', 'intro', 'thumbnail'];
 
-    public function record_images()
+    public function images(): HasMany
     {
         return $this->hasMany(RecordImage::class);
     }
