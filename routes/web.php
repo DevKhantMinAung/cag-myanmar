@@ -1,8 +1,9 @@
 <?php
 
+use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'test');
+Route::get('/', Home::class)->lazy();
 // Route::view('/test', 'test');
 
 Route::view('dashboard', 'dashboard')

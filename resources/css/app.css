@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.d_container{
+    @apply px-6 sm:px-10 md:px-16 lg:px-20 xl:px-28;
+}
+
+.filled-nav{
+    @apply shadow-md bg-white;
+}
+
+.active_nav{
+    @apply text-cag_green underline underline-offset-4 transition-all duration-150 ease-linear;
+}
+
+.section{
+    @apply w-screen py-8 md:pt-[120px] d_container;
+}
+
+.section-title{
+    @apply mb-6 text-2xl lg:text-4xl font-bold font-oswald tracking-wider uppercase;
+}
+
+.section-title > span{
+    @apply text-cag_green;
+}
+
