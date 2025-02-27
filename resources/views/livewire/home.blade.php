@@ -65,13 +65,15 @@
         </div>
 
         <div class="flex flex-wrap gap-4 md:max-w-[900px] mx-auto justify-center items-center">
-            @foreach ($companies as $company)
-                <div class="w-[200px]">
-                    <button @click="openPopUp = true">
-                        <img class="bg-center" src={{ '/storage/' . $company->logo }} alt="logo">
-                    </button>
-                </div>
-            @endforeach
+            @if ($companies)
+                @foreach ($companies as $company)
+                    <div class="w-[200px]">
+                        <button @click="openPopUp = true; $nextTick(() => { console.log('log') }) "  :disabled="openPopUp">
+                            <img class="bg-center" src={{ '/storage/' . $company->logo }} alt="logo">
+                        </button>
+                    </div>
+                @endforeach
+            @endif
             <div class="w-[200px]">
                 <img class="bg-center" src="/com_logo/cag_engineering.png" alt="logo">
             </div>

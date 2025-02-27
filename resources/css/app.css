@@ -40,4 +40,8 @@ body{
 .section-title > span{
     @apply text-cag_green;
 }
+.swiper-slide > img{
+    background-size: cover; 
+    background-position: center;
+}
 

@@ -21,22 +21,21 @@
 
     <div class="swiper h-[50vh] md:h-screen">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper ">
           <!-- Slides -->
-          <div class="swiper-slide"><img class="w-full h-full bg-cover bg-center"
-            src="https://cdn.pixabay.com/photo/2017/08/01/00/23/panel-2562239_1280.jpg" alt="bg-image"></div>
-          <div class="swiper-slide"><img class="w-full h-full bg-cover bg-center"
-            src="https://images.pexels.com/photos/9799706/pexels-photo-9799706.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="bg-image"></div>
-          <div class="swiper-slide"><img class="w-full h-full bg-cover bg-center"
-            src="https://images.pexels.com/photos/137602/pexels-photo-137602.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="bg-image"></div>
-          ...
+          <div class="swiper-slide" class="w-full h-full">
+            <img class=" bg-cover bg-center"
+            src="/Banner/banner1.jpg" alt="bg-image">
+          </div>
+          <div class="swiper-slide" class="w-full h-full">
+            <img class="bg-cover bg-center"
+            src="/Banner/banner2.jpg" alt="bg-image">
+          </div>
+          <div class="swiper-slide" class="w-full h-full">
+            <img class="bg-cover bg-center"
+            src="/Banner/banner3.jpg" alt="bg-image">
+          </div>
         </div>
-        <!-- If we need pagination -->
-        {{-- <div class="swiper-pagination"></div> --}}
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     
       </div>
         
@@ -51,17 +50,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
             autoplay: true,
 
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
             },
-
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
