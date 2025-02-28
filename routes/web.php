@@ -4,7 +4,6 @@ use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->lazy();
-// Route::view('/test', 'test');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
