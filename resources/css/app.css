@@ -34,14 +34,14 @@ body{
 }
 
 .section-title{
-    @apply mb-6 text-2xl lg:text-4xl font-bold font-oswald tracking-wider uppercase;
+    @apply mb-6 text-2xl lg:text-4xl font-bold tracking-wide uppercase;
 }
 
 .section-title > span{
     @apply text-cag_green;
 }
-.swiper-slide > img{
-    background-size: cover; 
-    background-position: center;
+
+.section-intro{
+    @apply text-sm w-[90%] sm:w-[70%] md:w-[60%] mx-auto mb-8;
 }
 

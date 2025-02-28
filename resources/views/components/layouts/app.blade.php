@@ -19,37 +19,13 @@
 
 <body>
 
-    <div class="swiper h-[50vh] md:h-screen">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper ">
-          <!-- Slides -->
-          <div class="swiper-slide" class="w-full h-full">
-            <img class=" bg-cover bg-center"
-            src="/Banner/banner1.jpg" alt="bg-image">
-          </div>
-          <div class="swiper-slide" class="w-full h-full">
-            <img class="bg-cover bg-center"
-            src="/Banner/banner2.jpg" alt="bg-image">
-          </div>
-          <div class="swiper-slide" class="w-full h-full">
-            <img class="bg-cover bg-center"
-            src="/Banner/banner3.jpg" alt="bg-image">
-          </div>
-        </div>
-    
-      </div>
-        
-    </div>
-
-    
-
     {{ $slot }}
 
     @livewireScripts
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.hero-swiper', {
             direction: 'horizontal',
             loop: true,
             autoplay: true,
