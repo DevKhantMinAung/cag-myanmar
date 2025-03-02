@@ -3,25 +3,34 @@
     <livewire:hero lazy />
 
     {{-- Hero Section --}}
-    <div class="h-[50vh] min-[1025px]:h-screen">
+    <div class="wrapper h-[50vh] min-[1025px]:h-screen">
         <div class="swiper hero-swiper h-full w-full">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper ">
                 <!-- Slides -->
-                @if ($sliders)
+                {{-- @if ($sliders)
                     @foreach ($sliders as $slider)
                         <div class="swiper-slide" class="w-full h-full">
                             <img class=" bg-cover bg-center" src="/storage/{{ $slider->image }}" alt="bg-image">
                         </div>
-                    @endforeach
-                @endif
-            </div>
+                        @endforeach
+                        @endif --}}
+                        <div class="swiper-slide" class="w-full h-full">
+                            <img class=" bg-cover bg-center" src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="bg-image">
+                        </div>
+                        <div class="swiper-slide" class="w-full h-full">
+                            <img class=" bg-cover bg-center" src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="bg-image">
+                        </div>
+                        <div class="swiper-slide" class="w-full h-full">
+                            <img class=" bg-cover bg-center" src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="bg-image">
+                        </div>
+                    </div>
         </div>
     </div>
 
 
     {{-- About Section --}}
-    <section id="about" class="w-screen d_container">
+    <section id="about" class="wrapper w-screen d_container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 items-center">
             <div>
                 <h1 class="section-title">About <span>Us</span></h1>
@@ -40,7 +49,7 @@
     </section>
 
     {{-- Our Companies Section --}}
-    <div id="companies" class="section text-center">
+    <div id="companies" class="wrapper section text-center">
         <div>
             <h1 class="section-title"><span>Our</span> Companies</h1>
             <p class="section-intro">Lorem ipsum, dolor sit amet consectetur
@@ -116,6 +125,9 @@
             </div>
         </div>
     @endif
+
+    {{-- Footer Section --}}
+    
 
 
     {{-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --}}
