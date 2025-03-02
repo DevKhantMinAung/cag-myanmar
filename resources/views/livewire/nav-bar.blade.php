@@ -1,6 +1,6 @@
 <div x-data="{mobileMenu: false}" x-cloak>
     <div id="nav-bar" class="fixed w-full left-0 top-0 rounded-b-md transition-all duration-300 ease-linear z-40">
-        <div class="d_container py-4 flex justify-between items-center">
+        <div class="cag_container py-4 flex justify-between items-center">
             <div>
                 <div class="w-[80px] sm:w-[100px] lg:w-[120px]">
                     <img class="w-full h-full bg-cover bg-center" src="/logo/logo.png" alt="logo">
