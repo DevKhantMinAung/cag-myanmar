@@ -10,7 +10,7 @@ const handleScroll = () => {
 };
 
 const setActiveNav = () => {
-    const sections = document.querySelectorAll(".wrapper");
+    const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav div");
 
     let currentSection = null;

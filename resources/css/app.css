@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
     font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
@@ -13,39 +13,61 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-nav > div > a:hover{
+nav>div>a:hover {
     @apply text-cag_green;
 }
 
-.cag_container{
+.cag_container {
     @apply px-6 sm:px-10 md:px-16 lg:px-20 xl:px-28;
 }
 
-.filled-nav{
+.filled-nav {
     @apply shadow-md bg-white;
 }
 
-.active_nav{
+.active_nav {
     @apply text-cag_green underline underline-offset-4 transition-all duration-150 ease-linear;
 }
 
-.section{
+.section {
     @apply w-screen py-8 md:pt-[120px] cag_container;
 }
 
-.section-title{
+.section-title {
     @apply mb-6 text-2xl lg:text-4xl font-bold tracking-wide uppercase;
 }
 
-.section-title > span{
+.section-title>span {
     @apply text-cag_green;
 }
 
-.section-intro{
+.section-intro {
     @apply text-sm w-[90%] sm:w-[70%] md:w-[60%] mx-auto mb-8;
 }
 
+.swiper-pagination-bullet-active {
+    @apply bg-cag_green !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    @apply text-white bg-cag_green p-4 md:p-6 rounded-full size-6 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    @apply text-[20px] !important;
+}
+.record-swiper-button-prev,
+.record-swiper-button-next {
+    @apply text-cag_green border border-cag_green p-4 md:p-6 rounded-full size-6 !important;
+}
+
+.record-swiper-button-prev::after,
+.record-swiper-button-next::after {
+    @apply text-[20px] !important;
+}

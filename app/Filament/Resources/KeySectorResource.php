@@ -42,7 +42,7 @@ class KeySectorResource extends Resource
                             ->rows(5),
                         FileUpload::make('image')
                             ->disk('public')
-                            ->directory('public')
+                            ->directory('key-sectors')
                             ->nullable()
                     ])
             ]);
